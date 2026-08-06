@@ -1,0 +1,13 @@
+inputs <- scan(file = "stdin", quiet = TRUE)
+
+x <- inputs[1]
+y <- inputs[2]
+z <- inputs[3]
+
+if (x > y && x > z) {
+  print(paste("Greatest is :", x))
+} else if (y > z) {
+  print(paste("Greatest is :", y))
+} else {
+  print(paste("Greatest is :", z))
+}
